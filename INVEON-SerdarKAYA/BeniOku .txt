@@ -1,0 +1,12 @@
+Selamlar,
+
+  Proje çalýþtýlýrýp incelenirken kolaylýk olmasý adýna Db Connection(MongoDb,Redis)'larýn static kalmasý adýna uzak sunucudan eriþilebilir olarak ayarladým. 
+  Projeyi run etmek için herhangi bir configuration ayarý yapýlmasýna gerek yoktur.
+
+  Admin Panelinde hesaplar ve ürünler ile ilgili düzenleme yapabilmek için Admin olmak gerektiðinden veritabanýnda kayýtlý bir admin hesabý mevcuttur.
+
+email: serdarkaya@inveon.com
+password: 123456
+
+
+Ýyi Çalýþmalar.

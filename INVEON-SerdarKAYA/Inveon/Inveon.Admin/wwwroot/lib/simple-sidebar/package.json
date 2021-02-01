@@ -1,0 +1,34 @@
+{
+  "name": "simple-sidebar",
+  "version": "1.0.0",
+  "description": "A simple sidebar to use in your React project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel src --out-file index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rasfa98/simple-sidebar.git"
+  },
+  "keywords": [
+    "React",
+    "Sidebar",
+    "Navigation",
+    "Drawer"
+  ],
+  "author": "Rasmus Falk",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

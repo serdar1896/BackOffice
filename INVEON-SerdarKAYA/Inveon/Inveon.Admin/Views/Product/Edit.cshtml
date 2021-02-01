@@ -1,0 +1,83 @@
+﻿@model ProductDto
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Products</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control"  readonly = "readonly" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Barcode" class="control-label"></label>
+                <input asp-for="Barcode" class="form-control" />
+                <span asp-validation-for="Barcode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label"></label>
+                <input asp-for="Quantity" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <button type="button" id="formButton">Edit Image</button>
+            <div class="form-group" id="form1">
+
+                <div class="form-group">
+                    <label asp-for="ProductImage.Name" class="control-label"></label>
+                    <input asp-for="ProductImage.Name" class="form-control" />
+                    <span asp-validation-for="ProductImage.Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="ProductImage.Link" class="control-label"></label>
+                    <input asp-for="ProductImage.Link" class="form-control" />
+                    <span asp-validation-for="ProductImage.Link" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="ProductImage.Alt" class="control-label"></label>
+                    <input asp-for="ProductImage.Alt" class="form-control" />
+                    <span asp-validation-for="ProductImage.Alt" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+<h3 class="text-center">Ürün ve Hesap Yönetimi</h3>
+
+<br />
+<div class="container body-content">
+    <div class="row">
+        <div class="col-md-4 offset-md-2">
+            <div class="panel panel-primary ">
+                <a href="/Account/Index" title="Account">
+                    <div class="panel panel-heading">
+                        <div class="container-fluid body-content">
+
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <i class="fa fa-th fa-5x"> </i>
+                                </div>
+
+                                <div class="col-xs-6 text-right">
+                                    <div>
+                                        <br />
+                                        &nbsp; Hesaplar(@ViewBag.TotalAccount)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 offset-md-2">
+            <div class="panel panel-primary">
+                <a href="/Product/Index" title="Product">
+                    <div class="panel panel-heading">
+                        <div class="container-fluid body-content">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <i class="fa fa-tasks fa-5x"> </i>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <div>
+                                        <br />
+                                        &nbsp;Ürünler(@ViewBag.TotalProduct)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
